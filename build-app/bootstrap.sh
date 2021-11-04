@@ -23,7 +23,7 @@ node --version || sudo yum install nodejs -y
 # Go to project folder and install dependencies
 cd /home/vagrant/app/spa && sudo npm install
 # Config vue production enviroment
-echo "VUE_APP_API_ENDPOINT"="http://localhost:4001/api" > .env.production
+echo "VUE_APP_API_ENDPOINT"="http://10.0.0.8:4001/api" > .env.production
 # build frontend 
 npm run build
 # move front to shared folder
